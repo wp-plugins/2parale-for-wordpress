@@ -3,7 +3,7 @@
  Plugin Name: 2Parale for WordPress
  Author: Andrei Baragan
  Author URI: http://andlei.blogspot.com/
- Plugin URI: http://andlei.blogspot.com/2Parale-pentru-wordpress
+ Plugin URI: http://andlei.blogspot.com/2009/04/2parale-pentru-wordpress.html
  Description: Allows WordPress users to quickly and easily insert 2Parale product links into posts and pages.
  Version: 1.0
  */
