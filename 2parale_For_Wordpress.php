@@ -130,7 +130,7 @@ if( !class_exists( '2Parale_For_WordPress' ) )
 		    if ($_POST['searchtype'] == 'banner') 
 		    {
 		      $products = $this->dp->banners_search($_POST['campaign'], $_POST['search'], 1, $per_page = 999);
-  		    $products = self->to_array($products);
+  		    $products = $this->to_array($products);
   		    $total = count($products);
   		    $products = array_slice($products, ($page - 1) * DOUAPARALE_PER_PAGE, DOUAPARALE_PER_PAGE);
 
@@ -139,7 +139,7 @@ if( !class_exists( '2Parale_For_WordPress' ) )
 		    else
 		    {
 		      $products = $this->dp->txtlinks_search($_POST['campaign'], $_POST['search'], 1, $per_page = 999);
-  		    $products = self->to_array($products);
+  		    $products = $this->to_array($products);
   		    $total = count($products);
   		    $products = array_slice($products, ($page - 1) * DOUAPARALE_PER_PAGE, DOUAPARALE_PER_PAGE);
 
@@ -303,7 +303,7 @@ if( !class_exists( '2Parale_For_WordPress' ) )
 		  $subscribed_campaigns = $this->dp->campaigns_listforaffiliate();
       if ($subscribed_campaigns) 
       {
-        $subscribed_campaigns = self->to_array($subscribed_campaigns);
+        $subscribed_campaigns = $this->to_array($subscribed_campaigns);
       }
       
       return $subscribed_campaigns;
